@@ -7,18 +7,28 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.nav-menu');
+        menu.classList.toggle('active');
+      }
+    </script>
 <body>
-  <header>
-    <div class="logo">Pusat Gadai Indonesia</div>
-    <nav>
-      <a href="#home">Beranda</a>
-      <a href="#about">Tentang Kami</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#contact">Kontak</a>
-      <a href="login_admin.php">Admin(only admin)</a>
 
-    </nav>
-  </header>
+    <header>
+      <div class="container">
+        <div class="logo">Pusat Gadai Indonesia</div>
+        <nav class="nav-menu">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#contact">Kontak</a>
+          <a href="login_admin.html">Admin(only admin)</a>
+
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </div>
+    </header>
 
   <section class="hero" id="home" data-aos="fade-in">
     <h1>Selamat Datang di Pusat Gadai Indonesia</h1>
@@ -46,7 +56,7 @@
           <li>Bunga Rendah</li>
           <li>Nilai Taksiran Tinggi</li>
         </ul>
-        <a href="#" class="simulasi-button">Hitung Simulasi</a>
+        <a href="#contact" class="simulasi-button">Hitung Simulasi</a>
       </div>
       <div class="simulasi-app">
         <h4><strong>Nikmati Aplikasi GAOL</strong></h4>
@@ -80,32 +90,26 @@
     <h2 style="text-align: center; color: #002b6c;">Mengapa Memilih Kami</h2>
     <div class="why-grid">
       <div class="why-card" data-aos="fade-up" data-aos-delay="100">
-        <img src="Assets/icon-safe.png" alt="Aman" />
         <h3>Aman</h3>
         <p>Barang jaminan disimpan aman dalam brankas tahan api dan bongkar</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="200">
-        <img src="Assets/icon-money.png" alt="Pinjaman Tinggi" />
         <h3>Pinjaman Tinggi</h3>
         <p>Pinjaman paling tinggi, hampir sama dengan harga jual</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="300">
-        <img src="Assets/icon-flash.png" alt="Proses Cepat" />
         <h3>Proses Cepat</h3>
         <p>Pencairan cepat hanya 10 menit tanpa survey</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="400">
-        <img src="Assets/icon-shield.png" alt="Diasuransikan" />
         <h3>Barang Diasuransikan</h3>
         <p>Semua barang gadai diasuransikan</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="500">
-        <img src="Assets/icon-id.png" alt="Syarat Mudah" />
         <h3>Syarat Mudah</h3>
         <p>Persyaratan mudah hanya dengan KTP</p>
       </div>
       <div class="why-card" data-aos="fade-up" data-aos-delay="600">
-        <img src="Assets/icon-percent.png" alt="Biaya Ringan" />
         <h3>Biaya Jasa Ringan</h3>
         <p>Biaya jasa hanya 5% per 2 minggu</p>
       </div>
